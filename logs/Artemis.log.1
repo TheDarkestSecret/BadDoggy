@@ -1,0 +1,124 @@
+2018-09-04 09:06:06,727 INFO: Artemis Startup [in /home/nate/Documents/BadDoggy/Artemis/app/__init__.py:50]
+2018-09-24 08:40:41,897 INFO: Artemis Startup [in /home/nate/Documents/BadDoggy/Artemis/app/__init__.py:50]
+2018-09-24 08:41:53,793 INFO: Artemis Startup [in /home/nate/Documents/BadDoggy/Artemis/app/__init__.py:50]
+2018-09-24 08:42:22,680 ERROR: Exception on /login [POST] [in /home/nate/.local/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/nate/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1193, in _execute_context
+    context)
+  File "/home/nate/.local/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 509, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such column: user.longitude
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/nate/.local/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nate/.local/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nate/.local/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/nate/.local/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/nate/.local/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nate/.local/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/nate/Documents/BadDoggy/Artemis/app/routes.py", line 108, in login
+    user = User.query.filter_by(username=form.username.data).first()
+  File "/home/nate/.local/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2888, in first
+    ret = list(self[0:1])
+  File "/home/nate/.local/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2680, in __getitem__
+    return list(res)
+  File "/home/nate/.local/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2988, in __iter__
+    return self._execute_and_instances(context)
+  File "/home/nate/.local/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 3011, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "/home/nate/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 948, in execute
+    return meth(self, multiparams, params)
+  File "/home/nate/.local/lib/python3.6/site-packages/sqlalchemy/sql/elements.py", line 269, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/home/nate/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1060, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/home/nate/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1200, in _execute_context
+    context)
+  File "/home/nate/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1413, in _handle_dbapi_exception
+    exc_info
+  File "/home/nate/.local/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 265, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/home/nate/.local/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 248, in reraise
+    raise value.with_traceback(tb)
+  File "/home/nate/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1193, in _execute_context
+    context)
+  File "/home/nate/.local/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 509, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: user.longitude [SQL: 'SELECT user.id AS user_id, user.username AS user_username, user.email AS user_email, user.password_hash AS user_password_hash, user.longitude AS user_longitude, user.lattitude AS user_lattitude, user.about_me AS user_about_me, user.last_seen AS user_last_seen \nFROM user \nWHERE user.username = ?\n LIMIT ? OFFSET ?'] [parameters: ('kerennotkaren', 1, 0)] (Background on this error at: http://sqlalche.me/e/e3q8)
+2018-09-24 08:43:35,497 INFO: Artemis Startup [in /home/nate/Documents/BadDoggy/Artemis/app/__init__.py:50]
+2018-09-24 08:43:43,937 INFO: Artemis Startup [in /home/nate/Documents/BadDoggy/Artemis/app/__init__.py:50]
+2018-09-24 08:43:50,457 INFO: Artemis Startup [in /home/nate/Documents/BadDoggy/Artemis/app/__init__.py:50]
+2018-09-24 08:44:42,819 INFO: Artemis Startup [in /home/nate/Documents/BadDoggy/Artemis/app/__init__.py:50]
+2018-09-24 08:44:48,989 INFO: Artemis Startup [in /home/nate/Documents/BadDoggy/Artemis/app/__init__.py:50]
+2018-09-24 08:44:56,365 INFO: Artemis Startup [in /home/nate/Documents/BadDoggy/Artemis/app/__init__.py:50]
+2018-09-24 08:45:07,439 INFO: Artemis Startup [in /home/nate/Documents/BadDoggy/Artemis/app/__init__.py:50]
+2018-10-29 18:57:52,264 INFO: Artemis Startup [in /home/nate/Documents/BadDoggy/Artemis/app/__init__.py:50]
+2018-10-29 18:58:15,279 INFO: Artemis Startup [in /home/nate/Documents/BadDoggy/Artemis/app/__init__.py:50]
+2018-10-29 18:59:37,006 INFO: Artemis Startup [in /home/nate/Documents/BadDoggy/Artemis/app/__init__.py:50]
+2018-10-29 19:12:45,689 INFO: Artemis Startup [in /home/nate/Documents/BadDoggy/Artemis/app/__init__.py:50]
+2018-10-29 19:19:43,815 INFO: Artemis Startup [in /home/nate/Documents/BadDoggy/Artemis/app/__init__.py:50]
+2018-10-29 20:00:31,027 ERROR: Exception on /register [POST] [in /home/nate/.local/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/nate/.local/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nate/.local/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nate/.local/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/nate/.local/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/nate/.local/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nate/.local/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/nate/Documents/BadDoggy/Artemis/app/routes.py", line 79, in register
+    user = User(username=form.username.data, email=form.email.data, location=form.location.data)
+  File "<string>", line 4, in __init__
+  File "/home/nate/.local/lib/python3.6/site-packages/sqlalchemy/orm/state.py", line 424, in _initialize_instance
+    manager.dispatch.init_failure(self, args, kwargs)
+  File "/home/nate/.local/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/home/nate/.local/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 249, in reraise
+    raise value
+  File "/home/nate/.local/lib/python3.6/site-packages/sqlalchemy/orm/state.py", line 421, in _initialize_instance
+    return manager.original_init(*mixed[1:], **kwargs)
+  File "/home/nate/.local/lib/python3.6/site-packages/sqlalchemy/ext/declarative/base.py", line 746, in _declarative_constructor
+    (k, cls_.__name__))
+TypeError: 'location' is an invalid keyword argument for User
+2018-10-29 20:01:05,321 ERROR: Exception on /register [POST] [in /home/nate/.local/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/nate/.local/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nate/.local/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nate/.local/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/nate/.local/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/nate/.local/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nate/.local/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/nate/Documents/BadDoggy/Artemis/app/routes.py", line 79, in register
+    user = User(username=form.username.data, email=form.email.data, location=form.location.data)
+  File "<string>", line 4, in __init__
+  File "/home/nate/.local/lib/python3.6/site-packages/sqlalchemy/orm/state.py", line 424, in _initialize_instance
+    manager.dispatch.init_failure(self, args, kwargs)
+  File "/home/nate/.local/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/home/nate/.local/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 249, in reraise
+    raise value
+  File "/home/nate/.local/lib/python3.6/site-packages/sqlalchemy/orm/state.py", line 421, in _initialize_instance
+    return manager.original_init(*mixed[1:], **kwargs)
+  File "/home/nate/.local/lib/python3.6/site-packages/sqlalchemy/ext/declarative/base.py", line 746, in _declarative_constructor
+    (k, cls_.__name__))
+TypeError: 'location' is an invalid keyword argument for User
+2018-10-31 09:31:21,528 INFO: Artemis Startup [in /home/nate/Documents/BadDoggy/Artemis/app/__init__.py:50]
